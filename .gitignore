@@ -25,3 +25,5 @@ dist-ssr
 
 # Ignore .env inside src
 src/.env
+
+
