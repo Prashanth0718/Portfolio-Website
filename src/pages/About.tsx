@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Code, Database, Layout, Smartphone, Users, Terminal } from 'lucide-react';
+import { Code, Database, Layout } from 'lucide-react';
 import Section from '../components/ui/Section';
 import SectionTitle from '../components/ui/SectionTitle';
 import { fadeIn, slideInFromLeft } from '../utils/motion';
