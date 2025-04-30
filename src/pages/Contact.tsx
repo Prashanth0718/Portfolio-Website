@@ -5,8 +5,7 @@ import emailjs from '@emailjs/browser';
 import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
 import { fadeIn, slideInFromLeft } from '../utils/motion';
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 
 const Contact = () => {
