@@ -33,13 +33,13 @@ const About = () => {
     },
     {
       degree: 'PCMB in PUC (Pre-University Course)',
-      institution: 'St. Josephs Pre-University College, Bangalore',
+      institution: 'Narayan Pu College, Kolar',
       duration: '2019 - 2021',
       description: 'Completed with distinction and a score of 93%'
     },
     {
       degree: 'SSLC (Secondary School Leaving Certificate)',
-      institution: 'Navodaya Vidhya Samasthe, ',
+      institution: 'Navodaya Vidhya Samasthe, Kuruboor',
       duration: '2018 - 2019',
       description: 'Completed with distinction and a score of 87.52%'
     },
