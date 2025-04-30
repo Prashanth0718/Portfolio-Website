@@ -32,16 +32,17 @@ const Contact = () => {
     try {
       // Replace with your EmailJS service details
       await emailjs.send(
-        'service_mxk1wyp',
-        'template_72j5l8c',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        'iZnG-EPjHqrOenkkB'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
+      
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
