@@ -1,170 +1,165 @@
 import { motion } from 'framer-motion';
-import { Code, Database, Layout } from 'lucide-react';
 import Section from '../components/ui/Section';
-import SectionTitle from '../components/ui/SectionTitle';
 import { fadeIn, slideInFromLeft } from '../utils/motion';
 
 const About = () => {
-  const services = [
+  const sections = [
     {
-      icon: <Layout />,
-      title: 'Web Development',
-      description: 'Creating responsive and interactive websites using modern technologies and best practices.'
+      title: "Background & Journey",
+      content: "Coming from a biology background in high school, stepping into the world of computer science felt both unfamiliar and overwhelming—like navigating uncharted waters. Yet, it was this very unfamiliarity that sparked my curiosity. What began as a challenge with Java programming soon evolved into a genuine passion for problem-solving.I not only embraced the initial challenges but am now actively learning and growing in Data Structures and Algorithms—an area that has quickly become a strong interest of mine.",
+      bgColor: "bg-primary-50 dark:bg-primary-900/20"
     },
     {
-      icon: <Database />,
-      title: 'Backend Development',
-      description: 'Developing robust server-side applications and APIs using Node.js and Express.'
+      title: "Education",
+      content: [
+        {
+          degree: "Bachelor of Technology in Computer Science",
+          school: "Presidency University, Bangalore",
+          year: "2021 - 2025",
+          details: "Currently pursuing with a CGPA of 8.85"
+        },
+        {
+          degree: "PCMB in PUC (Pre-University Course)",
+          school: "Narayan Pu College, Kolar",
+          year: "2019 - 2021",
+          details: "Completed with distinction and a score of 93%"
+        },
+        {
+          degree: "SSLC (Secondary School Leaving Certificate)",
+          school: "Navodaya Vidhya Samasthe, Kuruboor",
+          year: "2018 - 2019",
+          details: "Completed with distinction and a score of 87.52%"
+        }
+      ],
+      bgColor: "bg-secondary-50 dark:bg-secondary-900/20"
     },
     {
-      icon: <Code />,
-      title: 'Frontend Development',
-      description: 'Crafting beautiful user interfaces with React, TypeScript, and modern CSS frameworks.'
-    },
-  
-  ];
-
-  const education = [
-    {
-      degree: 'Bachelor of Technology in Computer Science',
-      institution: 'Presidency University, Bangalore',
-      duration: '2021 - 2025',
-      description: 'Currently pursuing with a CGPA of 8.85'
+      title: "Passions & Interests",
+      content: "Beyond coding, I'm deeply passionate about creating intuitive user experiences and solving complex technical challenges. I stay current with emerging technologies and best practices in software development, particularly in web development, cloud architecture, and DevOps practices.",
+      bgColor: "bg-accent-50 dark:bg-accent-900/20"
     },
     {
-      degree: 'PCMB in PUC (Pre-University Course)',
-      institution: 'Narayan Pu College, Kolar',
-      duration: '2019 - 2021',
-      description: 'Completed with distinction and a score of 93%'
+      title: "Projects & Initiatives",
+      content: [
+          "Developed an Online Chatbot Based Ticket Booking System for seamless user interaction and booking",
+          "Created a Gemini Clone, replicating core functionalities with a focus on responsive design and user experience",
+          "Built a Time Table Scheduler application to automate and organize schedules effectively",
+          "Designed and developed an Image Search Engine with advanced search and filtering capabilities"
+        ],
+      bgColor: "bg-primary-50/50 dark:bg-primary-900/20"
     },
     {
-      degree: 'SSLC (Secondary School Leaving Certificate)',
-      institution: 'Navodaya Vidhya Samasthe, Kuruboor',
-      duration: '2018 - 2019',
-      description: 'Completed with distinction and a score of 87.52%'
-    },
+      title: "Vision & Future Plans",
+      content: "My goal is to continue pushing the boundaries of what's possible in software development, focusing on creating scalable, efficient, and user-friendly applications. I'm particularly interested in exploring emerging technologies like AI/ML integration in web applications and cloud-native architecture.",
+      bgColor: "bg-secondary-50/50 dark:bg-secondary-900/20"
+    }
   ];
 
   return (
-    <>
-      {/* About Hero Section */}
-      <Section className="pt-24 md:pt-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div
-            variants={fadeIn('right', 0.3)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
+    <Section className="pt-24 md:pt-32">
+      <div className="max-w-4xl mx-auto">
+        {/* Introduction */}
+        <motion.div
+          variants={fadeIn('down', 0.3)}
+          initial="hidden"
+          animate="show"
+          className="bg-white dark:bg-dark-200 rounded-xl p-8 shadow-lg mb-12 transform transition-all hover:scale-[1.02]"
+        >
+          <motion.h1 
+            variants={slideInFromLeft(0.2)}
+            className="text-3xl md:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-6"
           >
-            <motion.h1 
-              className="text-4xl md:text-5xl font-heading font-bold text-gray-900 dark:text-white mb-6"
-              variants={slideInFromLeft(0.2)}
-            >
-              About Me
-            </motion.h1>
-            
-            <motion.p 
-              className="text-lg text-gray-600 dark:text-gray-300 mb-6"
-              variants={fadeIn('up', 0.4)}
-            >
-              Hello! I'm Prashanth, a passionate software developer with over a year of experience in building web applications. I specialize in creating user-friendly, accessible, and performant digital experiences.
-            </motion.p>
-            
-            <motion.p 
-              className="text-lg text-gray-600 dark:text-gray-300 mb-6"
-              variants={fadeIn('up', 0.5)}
-            >
-              My journey in software development began during my undergraduate studies when I built my first website. Since then, I've worked with various technologies and frameworks, always striving to learn and grow as a developer.
-            </motion.p>
-            
-            <motion.p 
-              className="text-lg text-gray-600 dark:text-gray-300"
-              variants={fadeIn('up', 0.6)}
-            >
-              When I'm not coding, you can find me hiking, reading science fiction novels, or experimenting with new recipes in the kitchen.
-            </motion.p>
-          </motion.div>
-          
+            About Me
+          </motion.h1>
+          <motion.p 
+            variants={fadeIn('up', 0.4)}
+            className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
+          >
+            Hey there! I'm <span className="font-semibold text-primary-600 dark:text-primary-400">Prashanth S N</span>, 
+            a passionate software developer with expertise in full-stack development. With a strong foundation in computer 
+            science and years of hands-on experience, I specialize in creating elegant solutions to complex problems.
+          </motion.p>
+        </motion.div>
 
-        </div>
-      </Section>
+        {/* Content Sections */}
+        {sections.map((section, index) => (
+          <motion.div
+            key={section.title}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className={`${section.bgColor} rounded-xl p-8 shadow-lg mb-8 transform transition-all hover:scale-[1.02]`}
+          >
+            <h2 className="text-3xl font-heading font-light opacity-90 text-gray-900 dark:text-white mb-6 text-center">
+              {section.title}
+            </h2>
+            
+            {Array.isArray(section.content) ? (
+              <div className="space-y-6">
+                {section.title === "Education" ? (
+                  section.content.map((edu, idx) => (
+                    <div key={idx} className="border-l-4 border-primary-500 dark:border-primary-400 pl-4">
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                      {typeof edu !== 'string' && edu.degree}
+                      </h3>
+                      <p className="text-primary-600 dark:text-primary-400">
+                        {typeof edu !== 'string' && edu.school}
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">
+                        {typeof edu !== 'string' && edu.year}
+                      </p>
+                      <p className="mt-2 text-gray-600 dark:text-gray-300">
+                        {typeof edu !== 'string' && edu.details}
+                      </p>
 
-      {/* Services Section */}
-      <Section darker={true}>
-        <SectionTitle 
-          title="Services I Offer" 
-          subtitle="I provide a wide range of services to help businesses and individuals build their digital presence."
-          center={true}
-        />
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white dark:bg-dark-300 p-6 rounded-lg shadow-md"
-            >
-              <div className="text-primary-600 dark:text-primary-400 mb-4 p-3 bg-primary-50 dark:bg-primary-900/30 inline-block rounded-lg">
-                {service.icon}
+                    </div>
+                  ))
+                ) : (
+                  <ul className="list-disc list-inside space-y-3 text-gray-600 dark:text-gray-300">
+                    {section.content.map((item, idx) => (
+                      <li key={idx} className="text-lg tracking-wide">
+                      {typeof item === "string" ? item : item.degree} {/* Adjust based on your need */}
+                    </li>
+                    
+                    ))}
+                  </ul>
+                )}
               </div>
-              <h3 className="text-xl font-heading font-semibold text-gray-900 dark:text-white mb-3">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                {service.description}
+            ) : (
+              <p className="text-lg text-gray-600 dark:text-gray-300 tracking-wide">
+                {section.content}
               </p>
-            </motion.div>
-          ))}
-        </div>
-      </Section>
+            )}
+          </motion.div>
+        ))}
 
-      {/* Experience & Education Section */}
-      <Section>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        
-          
-          
-          {/* Education */}
-          <div>
-            <SectionTitle title="Education" />
-            
-            <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px lg:before:mx-auto lg:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 dark:before:via-gray-700 before:to-transparent">
-              {education.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
-                  className="relative flex items-center justify-between lg:justify-normal lg:odd:flex-row-reverse group"
-                >
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white dark:border-gray-800 bg-gray-100 dark:bg-dark-300 text-secondary-600 dark:text-secondary-400 shadow shrink-0 lg:group-odd:ml-8 lg:group-even:mr-8">
-                    <span className="w-3 h-3 bg-secondary-600 dark:bg-secondary-400 rounded-full"></span>
-                  </div>
-                  <div className="w-[calc(100%-4rem)] lg:w-[calc(50%-2.5rem)] bg-white dark:bg-dark-200 p-4 md:p-6 rounded-lg shadow-md">
-                    <div className="mb-1 font-heading font-bold text-xl text-gray-900 dark:text-white">
-                      {item.degree}
-                    </div>
-                    <div className="mb-2 text-secondary-600 dark:text-secondary-400 font-medium">
-                      {item.institution}
-                    </div>
-                    <div className="mb-3 text-sm text-gray-500 dark:text-gray-400">
-                      {item.duration}
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      {item.description}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </Section>
-    </>
+        {/* Call to Action */}
+        {/* <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-accent-50 dark:bg-accent-900/20 rounded-xl p-8 shadow-lg text-center"
+        >
+          <h2 className="text-3xl font-heading font-light opacity-90 text-gray-900 dark:text-white mb-6">
+            Let's Connect!
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          </p>
+          <Button 
+            variant="primary"
+            size="lg"
+            icon={<ArrowRight size={18} />}
+            iconPosition="right"
+            as={Link}
+            to="/contact"
+          >
+            Get In Touch
+          </Button>
+        </motion.div> */}
+      </div>
+    </Section>
   );
 };
 
