@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Github, ExternalLink } from 'lucide-react';
+import { ArrowRight, Download, Github, ExternalLink, Code2, Database, Server, Braces } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Button from '../components/ui/Button';
 import Section from '../components/ui/Section';
@@ -7,16 +7,32 @@ import SectionTitle from '../components/ui/SectionTitle';
 import { fadeIn, staggerContainer, slideInFromLeft } from '../utils/motion';
 import resumePDF from '../assets/Resume.pdf';
 
-
 const Home = () => {
-  // Placeholder data
-  const skills = [
-    { name: 'Java', level: 90 },
-    { name: 'JavaScript', level: 85 },
-    { name: 'React', level: 80 },
-    { name: 'MongoDB & Mysql', level: 90 },
-    { name: 'Css & Tailwind-Css', level: 85 },
-    { name: 'Node.js', level: 70 },
+  const techStack = [
+    {
+      icon: <Code2 size={24} />,
+      name: 'Frontend',
+      description: 'Building responsive and interactive user interfaces with React and TypeScript',
+      technologies: ['React', 'JavaScript', 'Tailwind CSS']
+    },
+    {
+      icon: <Server size={24} />,
+      name: 'Backend',
+      description: 'Creating robust server-side applications with Node.js and Express',
+      technologies: ['Node.js', 'Express.js', 'REST APIs']
+    },
+    {
+      icon: <Database size={24} />,
+      name: 'Database',
+      description: 'Managing data with modern database technologies',
+      technologies: ['MongoDB', 'MySQL']
+    },
+    {
+      icon: <Braces size={24} />,
+      name: 'Tools',
+      description: 'Utilizing modern development tools and practices',
+      technologies: ['Git', 'VsCode', 'Eclipse']
+    }
   ];
 
   const featuredProjects = [
@@ -51,7 +67,14 @@ const Home = () => {
             animate="show"
             className="order-2 lg:order-1"
           >
-            
+            {/* <motion.span 
+              className="inline-block px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full text-sm font-medium mb-6"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              Software Developer
+            </motion.span> */}
             
             <motion.h1 
               className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-900 dark:text-white mb-6"
@@ -69,7 +92,7 @@ const Home = () => {
                 variants={slideInFromLeft(0.4)}
                 className="text-primary-600 dark:text-primary-400"
               >
-                Web Developer
+                Full Stack Developer
               </motion.span>
             </motion.h1>
             
@@ -103,7 +126,6 @@ const Home = () => {
                     Download Resume
                 </Button>
               </a>
-
             </motion.div>
           </motion.div>
           
@@ -124,33 +146,42 @@ const Home = () => {
         </div>
       </Section>
 
-      {/* Skills Section */}
-      <Section id="skills" darker={true}>
+      {/* Tech Stack Section */}
+      <Section id="tech-stack" darker={true}>
         <SectionTitle 
-          title="My Skills" 
-          subtitle="I've worked with a range of technologies in the web development world, from back-end to design."
+          title="Tech Stack" 
+          subtitle="My primary focus is on JavaScript ecosystem, with expertise in modern web technologies."
           center={true}
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-          {skills.map((skill, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          {techStack.map((tech, index) => (
             <motion.div
-              key={index}
+              key={tech.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white dark:bg-dark-300 p-6 rounded-lg shadow-md"
+              className="bg-white dark:bg-dark-300 p-6 rounded-lg shadow-md group hover:transform hover:scale-105 transition-all duration-300"
             >
-              <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-3">{skill.name}</h3>
-              <div className="w-full bg-gray-200 dark:bg-dark-200 rounded-full h-2.5">
-                <div 
-                  className="bg-primary-600 dark:bg-primary-500 h-2.5 rounded-full"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
+              <div className="text-primary-600 dark:text-primary-400 mb-4 p-3 bg-primary-50 dark:bg-primary-900/30 inline-block rounded-lg group-hover:rotate-12 transition-transform duration-300">
+                {tech.icon}
               </div>
-              <div className="mt-2 text-right text-sm text-gray-500 dark:text-gray-400">
-                {skill.level}%
+              <h3 className="text-xl font-heading font-semibold text-gray-900 dark:text-white mb-3">
+                {tech.name}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                {tech.description}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {tech.technologies.map((item, idx) => (
+                  <span 
+                    key={idx}
+                    className="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-dark-200 text-gray-800 dark:text-gray-200"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
             </motion.div>
           ))}
@@ -249,7 +280,7 @@ const Home = () => {
             Interested in working together?
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-          Let's build something amazing together. I'm currently available for full-time opportunities and collaborative projects.
+            Let's build something amazing together. I'm currently available for freelance work and full-time opportunities.
           </p>
           <Link to="/contact">
             <Button variant="primary" size="lg" icon={<ArrowRight size={18} />} iconPosition="right">
