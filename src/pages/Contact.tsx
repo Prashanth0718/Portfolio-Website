@@ -42,7 +42,6 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
       
-      
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
