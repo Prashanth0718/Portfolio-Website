@@ -39,7 +39,7 @@ const Home = () => {
     {
       id: '1',
       title: 'Online Chatbot for Museum Ticket Booking',
-      description: 'A full-stack e-commerce platform with product management, cart functionality, and payment processing.',
+      description: 'A full-stack chatbot-based ticketing system for museums, built with the MERN stack. Supports multilingual booking, cancellations, and secure payments via Razorpay.',
       image: 'https://images.pexels.com/photos/1310110/pexels-photo-1310110.jpeg?auto=compress&cs=tinysrgb&w=600?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       tags: ['React', 'Node.js', 'MongoDB', 'Rasorpay'],
       githubUrl: 'https://github.com/Prashanth0718/ONLINE-CHATBOT-TICKETING-SYSTEM',
