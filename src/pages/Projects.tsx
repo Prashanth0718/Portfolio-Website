@@ -13,7 +13,7 @@ const Projects = () => {
       image: 'https://images.pexels.com/photos/1310110/pexels-photo-1310110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       tags: ['React', 'Node.js', 'MongoDB', 'Rasorpay', 'Express.js'],
       githubUrl: 'https://github.com/Prashanth0718/ONLINE-CHATBOT-TICKETING-SYSTEM',
-      liveUrl: '#',
+      liveUrl: 'https://museumgo.in/',
       featured: true
     },
     {
