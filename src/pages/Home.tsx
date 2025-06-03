@@ -43,7 +43,8 @@ const Home = () => {
       image: 'https://images.pexels.com/photos/1310110/pexels-photo-1310110.jpeg?auto=compress&cs=tinysrgb&w=600?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       tags: ['React', 'Node.js', 'MongoDB', 'Rasorpay'],
       githubUrl: 'https://github.com/Prashanth0718/ONLINE-CHATBOT-TICKETING-SYSTEM',
-      liveUrl: '#',
+      liveUrl: 'https://museumgo.in',
+
     },
     {
       id: '2',
@@ -67,14 +68,14 @@ const Home = () => {
             animate="show"
             className="order-2 lg:order-1"
           >
-            {/* <motion.span 
+            <motion.span 
               className="inline-block px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full text-sm font-medium mb-6"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               Software Developer
-            </motion.span> */}
+            </motion.span>
             
             <motion.h1 
               className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-900 dark:text-white mb-6"
