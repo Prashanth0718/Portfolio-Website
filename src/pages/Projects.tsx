@@ -52,8 +52,8 @@ const Projects = () => {
       description: 'A personal portfolio website showcasing my projects, skills, and experience, built with React and Tailwind CSS.',
       image: 'https://images.pexels.com/photos/31861180/pexels-photo-31861180.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-      githubUrl: '#',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/Prashanth0718/Portfolio-Website',
+      liveUrl: 'https://prashanth-s-n.netlify.app/',
       featured: false
     },
     {

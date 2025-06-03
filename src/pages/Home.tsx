@@ -52,8 +52,8 @@ const Home = () => {
       description: 'A responsive portfolio website showcasing my work and skills with dark mode and animations.',
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-      githubUrl: '#',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/Prashanth0718/Portfolio-Website',
+      liveUrl: 'https://prashanth-s-n.netlify.app/',
     },
   ];
 
