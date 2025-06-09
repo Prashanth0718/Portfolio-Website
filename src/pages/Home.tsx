@@ -50,7 +50,7 @@ const Home = () => {
       id: '2',
       title: 'Portfolio Website',
       description: 'A responsive portfolio website showcasing my work and skills with dark mode and animations.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'https://plus.unsplash.com/premium_photo-1675793715030-0584c8ec4a13?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fHww?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       tags: ['React', 'Tailwind CSS', 'Framer Motion'],
       githubUrl: 'https://github.com/Prashanth0718/Portfolio-Website',
       liveUrl: 'https://prashanth-s-n.netlify.app/',
