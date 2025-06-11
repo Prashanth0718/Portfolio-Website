@@ -87,7 +87,7 @@ const Contact = () => {
     {
       icon: <Twitter size={24} />,
       label: 'Twitter',
-      href: 'https://twitter.com/prashanth_arya_',
+      href: 'https://twitter.com/prashanth_s_n',
     },
   ];
 

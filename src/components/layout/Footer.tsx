@@ -7,7 +7,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: <Github size={20} />, href: "https://github.com/Prashanth0718", label: "GitHub" },
     { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/prashanth-s-n-agrahara/", label: "LinkedIn" },
-    { icon: <Twitter size={20} />, href: "https://x.com/prashanth_arya_", label: "Twitter" },
+    { icon: <Twitter size={20} />, href: "https://x.com/prashanth_s_n", label: "Twitter" },
     { icon: <Mail size={20} />, href: "mailto:prashanthsn2003@gmail.com", label: "Email" }
   ];
 
