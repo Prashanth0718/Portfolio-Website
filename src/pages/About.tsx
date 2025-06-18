@@ -16,7 +16,7 @@ const About = () => {
           degree: "Bachelor of Technology in Computer Science",
           school: "Presidency University, Bangalore",
           year: "2021 - 2025",
-          details: "Currently pursuing with a CGPA of 8.85"
+          details: "Currently pursuing with a CGPA of 8.91"
         },
         {
           degree: "PCMB in PUC (Pre-University Course)",
