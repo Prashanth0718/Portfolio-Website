@@ -48,13 +48,13 @@ const Home = () => {
     },
     {
       id: '2',
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website showcasing my work and skills with dark mode and animations.',
-      image: 'https://plus.unsplash.com/premium_photo-1675793715030-0584c8ec4a13?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fHww?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-      githubUrl: 'https://github.com/Prashanth0718/Portfolio-Website',
-      liveUrl: 'https://prashanth-s-n.netlify.app/',
-    },
+      title: 'Lumina Chat',
+      description: 'A full-stack real-time chat application built with React, FastAPI, MongoDB Atlas, and WebSockets. Features secure JWT authentication, one-to-one and group chats, typing indicators, online/offline presence, read receipts, image/file/voice sharing, and cloud deployment using Vercel and Render.',
+      image: 'https://png.pngtree.com/thumb_back/fh260/background/20230716/pngtree-portfolio-displays-and-mobile-apps-with-3d-shapes-chat-messages-and-image_3879137.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      tags: ['React', 'FastAPI', 'MongoDB', 'WebSocket', 'JWT', 'Tailwind CSS', 'Vercel', 'Render'],
+      githubUrl: 'https://github.com/Prashanth0718/LuminaChat',
+      liveUrl: 'https://luminachat-vert.vercel.app/home',
+    }, 
   ];
 
   return (
