@@ -18,12 +18,12 @@ const Projects = () => {
     },
     {
       id: '2',
-      title: 'Gemini Clone',
-      description: 'A real-time Gemini clone using HTML, CSS, and JavaScript, with interactive typing effects, theme toggle, and smooth animations. Used Fetch API for backend and Local Storage for chat history.',
-      image: 'https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/08/gemini-suite-logo-on-black-backgrounds.jpg?q=70&fit=contain&w=1200&h=628&dpr=1?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['HTML', 'CSS', 'JavaScript', 'Gemini API'],
-      githubUrl: 'https://github.com/Prashanth0718/Gemini-Clone',
-      liveUrl: 'https://prashanth-s-n-gemini-clone.netlify.app/',
+      title: 'Lumina Chat',
+      description: 'A full-stack real-time chat application built with React, FastAPI, MongoDB Atlas, and WebSockets. Features secure JWT authentication, one-to-one and group chats, typing indicators, online/offline presence, read receipts, image/file/voice sharing, and cloud deployment using Vercel and Render.',
+      image: 'https://png.pngtree.com/thumb_back/fh260/background/20230716/pngtree-portfolio-displays-and-mobile-apps-with-3d-shapes-chat-messages-and-image_3879137.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      tags: ['React', 'FastAPI', 'MongoDB', 'WebSocket', 'JWT', 'Tailwind CSS', 'Vercel', 'Render'],
+      githubUrl: 'https://github.com/Prashanth0718/LuminaChat',
+      liveUrl: 'https://luminachat-vert.vercel.app/home',
       featured: true
     },  
     {
@@ -65,7 +65,17 @@ const Projects = () => {
       githubUrl: 'https://github.com/Prashanth0718/Image-Search-Engine',
       liveUrl: 'https://prashanth-s-n-image-search-engine.netlify.app/',
       featured: false
-    }
+    },
+    {
+      id: '7',
+      title: 'Gemini Clone',
+      description: 'A real-time Gemini clone using HTML, CSS, and JavaScript, with interactive typing effects, theme toggle, and smooth animations. Used Fetch API for backend and Local Storage for chat history.',
+      image: 'https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/08/gemini-suite-logo-on-black-backgrounds.jpg?q=70&fit=contain&w=1200&h=628&dpr=1?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Gemini API'],
+      githubUrl: 'https://github.com/Prashanth0718/Gemini-Clone',
+      liveUrl: 'https://prashanth-s-n-gemini-clone.netlify.app/',
+      featured: true
+    },
   ];
 
   return (
